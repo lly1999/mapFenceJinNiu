@@ -9,6 +9,15 @@
 - [ ] 在自己的仓库提交pull/request(简称pr),等待owner review
 
 
+## 后端配置
+由于安全,隐藏了src/main/resources/application.properties,一些涉及到mybatis数据源的配置
+```
+#mybatis
+spring.datasource.url=/
+spring.datasource.username=
+spring.datasource.password=
+```
+需要自行配置，详情google或者联系owner。
 
 
 ##  后端通用返回接口 CommonResult
