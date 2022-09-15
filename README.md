@@ -1,4 +1,16 @@
 # 金牛区综合执法调度指挥平台  mapFenceJinNiu
+## 代码流程
+· 现在github默认分支是main，本地git一般是master，所以请注意分支名称的不同，自己本地做好修改
+- [ ] Fork一份进自己的github仓库
+- [ ] git clone 到自己的本地
+- [ ] git new branch dev分支，建议不要在main分支进行改动
+- [ ] 改动完毕后，本地merger进main分支
+- [ ] git push进自己的远程仓库
+- [ ] 在自己的仓库提交pull/request(简称pr),等待owner review
+
+
+
+
 ##  后端通用返回接口 CommonResult
 ```
 {
@@ -36,8 +48,12 @@ dataNames,数据名,前端解析用
         },
 ```
 ### 人员类 UserAdmin
+```
 见代码
+```
 ### 围栏   Fence
+```
 见代码
+```
 
 
