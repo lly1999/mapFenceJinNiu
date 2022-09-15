@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapjinniu.modules.user.mapper.UserAdminMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mapjinniu.modules.user.model.UserAdmin">
+        <id column="id" property="id" />
+        <result column="tel" property="tel" />
+        <result column="vx" property="vx" />
+        <result column="title" property="title" />
+        <result column="location" property="location" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="fence_id" property="fenceId" />
+        <result column="street" property="street" />
+        <result column="role" property="role" />
+        <result column="permission" property="permission" />
+    </resultMap>
+
+</mapper>
