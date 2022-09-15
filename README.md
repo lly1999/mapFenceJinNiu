@@ -4,7 +4,7 @@
 - [ ] Fork一份进自己的github仓库
 - [ ] git clone 到自己的本地
 - [ ] git new branch dev分支，建议不要在main分支进行改动
-- [ ] 改动完毕后，本地merger进main分支
+- [ ] 改动完毕后，本地merger进main分支,记得先update远端的改动！！！！
 - [ ] git push进自己的远程仓库
 - [ ] 在自己的仓库提交pull/request(简称pr),等待owner review
 
