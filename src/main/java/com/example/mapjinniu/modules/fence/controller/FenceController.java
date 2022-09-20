@@ -4,6 +4,7 @@ package com.example.mapjinniu.modules.fence.controller;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.example.mapjinniu.common.CommonResult;
 import com.example.mapjinniu.common.ResultCode;
 import com.example.mapjinniu.common.Table;
@@ -105,7 +106,20 @@ public class FenceController {
     }
     else  return CommonResult.failed(ResultCode.FAILED);
     }
+    @RequestMapping (value = "/updateById",method = RequestMethod.POST)
 
+    @ResponseBody
+    public CommonResult updateFenceById(@RequestBody Fence fence){
+
+
+        boolean count =fenceService.updateById(fence);
+        if (count) {
+            return CommonResult.success(1);
+
+        }
+        else  return CommonResult.failed(ResultCode.FAILED);
+
+    }
 
 
 @RequestMapping(value = "/test",method = RequestMethod.GET)

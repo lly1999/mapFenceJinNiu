@@ -4,6 +4,7 @@ package com.example.mapjinniu.modules.user.controller;
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 import com.example.mapjinniu.common.CommonResult;
+import com.example.mapjinniu.common.ResultCode;
 import com.example.mapjinniu.common.Table;
 
 import com.example.mapjinniu.modules.user.model.UserAdmin;
@@ -75,6 +76,18 @@ public class UserAdminController {
             LOGGER.debug("createBrand failed:{}", userAdmin);
         }
         return commonResult;
+    }
+
+    @RequestMapping (value = "/delete",method = RequestMethod.DELETE)
+
+    @ResponseBody
+    public CommonResult deleteFenceById(Integer id){
+        boolean count = userAdminService.removeById(id);
+        if (count) {
+            return CommonResult.success(1);
+
+        }
+        else  return CommonResult.failed(ResultCode.FAILED);
     }
 }
 
